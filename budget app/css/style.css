@@ -1,0 +1,52 @@
+
+body{
+  font-family: arial;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border: 2px solid #e10;
+  border-radius: 0.7rem;
+}
+
+.page-header{
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0.2rem 1rem 1.5rem 1rem;
+  border: 2px solid #fdd;
+  border-radius: 0.25rem;
+}
+
+.entry_column{
+  background: linear-gradient(rgba(200, 0, 0, 0.5), rgba(0, 150, 0, 0.5));
+}
+
+.budget_form{
+  border: 1px solid blue;
+}
+
+.expense_form{
+  border: 1px solid red;
+}
+
+.btn{
+  border-radius: 0.5rem !important;
+}
+
+.btn-pink{
+  background: #ef7998;
+  color: #000;
+}
+
+.btn-pink:hover{
+  background: #000;
+  color: #ef7998;
+}
+
+.money_show{
+  font-size: 3rem;
+}

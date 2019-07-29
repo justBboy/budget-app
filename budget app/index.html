@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my Budget app</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h2 class="text-center text-uppercase my-4 page-header"> My budget App</h2>
+        <div class="row entry_column">
+          <div class="col-10 col-md-6 col-lg-6 text-center">
+            <!-- budget form -->
+            <form role="form" class="budget_form mt-5">
+              <div class="form-group">
+                <label for="budget">Please Enter Budget</label>
+                <input type="text" name="" id="budget_value" class="form-control">
+              </div>
+              <button type="submit" name="button" id="budget_submit" class="btn btn-primary">Calculate budget</button>
+            </form>
+            <!-- end of budget form -->
+            <!-- expense form -->
+            <form role="form" class="expense_form my-5">
+              <div class="form-group">
+                <label for="expense">Please enter your expense</label>
+                <input type="text" name="" placeholder="please enter the name of the expense" class="form-control" id="expense_name">
+              </div>
+              <div class="form-group">
+                <label for="expense value">Please enter the value of your expense</label>
+                <input type="text" name="" class="form-control" placeholder="please enter the value of your expense" id="expense_value">
+              </div>
+              <button type="submit" name="button" class="btn btn-pink" id="expense_submit">Add expense</button>
+            </form>
+            <!-- end of expense form -->
+          </div> <!-- end of column 1 -->
+
+          <div class="col-10 col-md-6 col-lg-6 text-center">
+            <!-- shows -->
+            <div class="d-flex justify-content-between">
+              <div class="">
+                <h2 class="head">Budget</h2>
+                <p><i class="fas fa-money"></i></p>
+                <p class="money_show"><strong>$<span id="budget_amount">0</span></strong></p>
+              </div>
+              <div class="">
+                <h2 class="head">Expenses</h2>
+                <p><i class="fas fa-euro"></i></p>
+                <p class="money_show"><strong>$<span id="expense_amount">0</span></strong></p>
+              </div>
+              <div class="">
+                <h2 class="head">Balance</h2>
+                <p><i class="fas fa-eur"></i></p>
+                <p class="money_show"><strong>$<span id="balance_amount">0</span></strong></p>
+              </div>
+            </div>
+            <!-- end of shows -->
+            <div class="d-flex justify-content-around">
+              <div class="" id="expense_title">
+                <h2 class="expense">Expense title</h2>
+              </div>
+              <div class="" id="expense_value_name">
+                <h2 class="expense">Expense value $</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="script/main.js" charset="utf-8"></script>
+  </body>
+</html>
